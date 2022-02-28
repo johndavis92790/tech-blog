@@ -24,10 +24,11 @@
   This can be a good starting point to create a blog of many kinds.
 
   See the following images for a preview!
-  ![Home Page](public/img/HomePage.png)
-  ![Warehouse Page](public/img/WarehousePage.png)
-  ![Office Page](public/img/OfficePage.png)
-  ![Completed](public/img/Completed.png)
+  ![Home Page](public/img/homepage.png)
+  ![Dashboard Page](public/img/dashboard.png)
+  ![Edit Page](public/img/edit.png)
+  ![Login Page](public/img/login.png)
+  ![Signup Page](public/img/signup.png)
 
   ### Credits
   
