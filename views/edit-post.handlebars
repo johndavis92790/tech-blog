@@ -1,0 +1,32 @@
+<article>
+  <a href="/dashboard"><h5 class="m-3">&larr; Back to dashboard</h5></a>
+  <h2 class="m-3">
+    Edit Post
+  </h2>
+  <form class="edit-post-form m-3">
+    <div class="mb-3">
+      <label for="post-title" class="form-label">Title</label>
+      <input name="post-title" type="text" class="form-control" id="post-title" value="{{post.title}}"/>
+    </div>
+    <div class="mb-3">
+      <label for="post-content" class="form-label">Content</label>
+      <input name="post-content" type="text" class="form-control" id="post-content" value="{{post.content}}"/>
+    </div>
+    <button type="submit" class="btn btn-primary m-3">Save post</button>
+    <button type="button" class="delete-post-btn btn btn-danger m-3">Delete post</button>
+  </form>
+</article>
+
+<form class="comment-form m-3">
+  <div class="mb-3">
+    <label for="comment-body" class="form-label">Comment</label>
+    <input name="comment-body" type="text" class="form-control" id="comment-body" />
+  </div>
+  <button type="submit" class="btn btn-primary m-3">Add Comment</button>
+</form>
+
+{{> comments post.comments}}
+
+<script src="/js/edit-post.js"></script>
+<script src="/js/delete-post.js"></script>
+<script src="/js/comment.js"></script>

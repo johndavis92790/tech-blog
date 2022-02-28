@@ -10,7 +10,7 @@ router.get("/", withAuth, (req, res) => {
     },
     attributes: [
       "id",
-      "post_url",
+      "content",
       "title",
       "created_at"
     ],
@@ -40,13 +40,9 @@ router.get("/", withAuth, (req, res) => {
 });
 
 router.get("/edit/:id", withAuth, (req, res) => {
+  console.log("req.params.id", req.params.id);
   Post.findByPk(req.params.id, {
-    attributes: [
-      "id",
-      "post_url",
-      "title",
-      "created_at"
-    ],
+    attributes: ["id", "content", "title", "created_at"],
     include: [
       {
         model: Comment,

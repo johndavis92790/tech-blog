@@ -1,0 +1,10 @@
+<section class="comments">
+  <div class="meta list-group">
+    {{#each this}}
+    <small>Commented by {{user.username}} on {{format_date created_at}}</small>
+    <a class="list-group-item list-group-item-action danger">
+      {{comment_text}}
+    </a>
+    {{/each}}
+  </div>
+</section>
